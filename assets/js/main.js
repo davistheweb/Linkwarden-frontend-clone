@@ -1,6 +1,10 @@
-document.addEventListener('focus',()=>{
-    document.title = "LINKWARDEN || FRONTEND CLONE";
-});
-document.addEventListener('blur',()=>{
-    document.title = "Come Back";
-});
+const webTitle = () => {
+
+    window.addEventListener('focus',()=>{
+        document.title = "LINKWARDEN || FRONTEND CLONE";
+    });
+    window.addEventListener('blur',()=>{
+        document.title = "Come Back";
+    });
+}
+webTitle();
